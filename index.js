@@ -42,10 +42,10 @@ class Player {
 }
 
 class Platform{
-    constructor(){
+    constructor(x,y){
         this.position = {
-            x:200,
-            y:100
+            x,
+            y
         }
         
         this.width=200
@@ -58,7 +58,7 @@ class Platform{
 }
 
 const player = new Player()
-const platforms = [new Platform()]
+const platforms = [new Platform(500,50),new Platform(200,100)]
 
 const keys={
     right:{
